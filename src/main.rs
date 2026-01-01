@@ -1,6 +1,15 @@
 use rand::Rng;
 use std::io::stdin;
 
+/*
+ * Future ideas that might be interesting to implement:
+ * - Keeping track of score?
+ * - Forcing strength == toughness more often (this will occur very rarely right
+ *   now).
+ * - Make it graphical?
+ * - Breaking out without Control-C.
+ */
+
 // Cribbed from the 10th edition (latest) core rules.
 fn get_dice_roll_from_rules(strength: i32, toughness: i32) -> i32 {
     // Implement these checks in the same order as the table from the core rules
